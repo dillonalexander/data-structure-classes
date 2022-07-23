@@ -2,7 +2,7 @@ from nodes import Node
 
 class Queue:
     
-    def __init__(self, head=None, tail=None, max_size=None):
+    def __init__(self, max_size=None, head=None, tail=None):
         self.head = head
         self.tail = tail
         self.max_size = max_size
@@ -60,7 +60,7 @@ class Queue:
             return True
         return False
 
-q = Queue()
+#q = Queue()
 
 #Test
 #q.enqueue('all the fluffy kitties')
@@ -69,7 +69,7 @@ q = Queue()
 #q.enqueue("some guy with a mustache")
 #q.dequeue()
 
-#Test3
+# #Test3
 # print("Creating a deli line with up to 10 orders...\n------------")
 # deli_line = Queue(10)
 # print("Adding orders to our deli line...\n------------")
@@ -88,7 +88,6 @@ q = Queue()
 # print("------------\nOur first order will be " + deli_line.peek())
 # print("------------\nNow serving...\n------------")
 # 
-# deli_line.dequeue()
 # deli_line.dequeue()
 # deli_line.dequeue()
 # deli_line.dequeue()
